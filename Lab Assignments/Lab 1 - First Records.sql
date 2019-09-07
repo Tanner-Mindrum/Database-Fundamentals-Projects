@@ -9,10 +9,13 @@ CREATE TABLE teamMembers (
     CONSTRAINT teamMembers_pk PRIMARY KEY (tCellPhone)
 );
 
+-- Add initial row
 INSERT INTO teamMembers (tLastName, tFirstName, tCellPhone)
 VALUES ('Mindrum', 'Tanner', '(123) 456-7890');
 
+-- Test to see if primary key is working
 INSERT INTO teamMembers (tLastName, tFirstName, tCellPhone)
 VALUES ('Mindrum', 'Tanner', '(777) 456-7890');
 
+--Display data
 SELECT * FROM teamMembers;
